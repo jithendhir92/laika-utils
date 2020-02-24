@@ -1,0 +1,30 @@
+#add mybin
+export PATH=$PATH:/usr/local/myapps
+export PATH=$PATH:/usr/local/mybin
+
+#java paths
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home"
+export PATH="$PATH:$JAVA_HOME/bin"
+
+#maven paths
+export M2_HOME=/usr/local/Cellar/maven/3.6.1
+export PATH=$PATH:$M2_HOME/bin
+
+#kafka paths
+export KAFKA_HOME=/usr/local/Cellar/kafka/2.2.0
+export PATH=$PATH:$KAFKA_HOME/libexec/bin
+
+#hadoop 2.7 paths
+export HADOOP_HOME=/usr/local/myapps/hadoop-2.7.7
+export PATH=$PATH:/usr/local/myapps/hadoop-2.7.7/bin
+
+#hadoop 2.9 paths
+#export HADOOP_HOME=/usr/local/myapps/hadoop-2.9.2
+#export PATH=$PATH:/usr/local/myapps/hadoop-2.9.2/bin
+
+#beautify
+echo "laika" | figlet -f starwars
+fortune -a | cow$(shuf -n1 -e say think) -f $(ls /usr/local/Cellar/cowsay/3.04/share/cows/*.cow | shuf -n1)
+
+#others
+
